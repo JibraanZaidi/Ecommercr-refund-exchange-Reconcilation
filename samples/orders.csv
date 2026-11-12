@@ -1,0 +1,2 @@
+order_reference,customer_name,customer_email,city,sku,product_name,category,quantity,unit_price,payment_reference
+ORD-IMPORT-01,Nadia Saleem,nadia@example.test,Lahore,S1-009,Aloe Body Lotion,Skincare,2,950.00,COD-IMPORT-01

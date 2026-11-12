@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% from 'macros.html' import heading,input,csrf %}{% block content %}{{ heading(title,description=subtitle) }}<form method="post" class="panel form-grid">{{ csrf() }}{% for f in fields %}{{ input(f) }}{% endfor %}<div class="form-actions"><button>Save changes</button><a href="{{ back }}">Cancel</a></div></form>{% endblock %}
