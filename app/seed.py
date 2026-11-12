@@ -13,7 +13,7 @@ def seed():
     for name,role_name in [('admin','Admin'),('support','Customer Support'),('warehouse','Warehouse'),('accounts','Accounts')]:
         p=Permission(name=name); db.session.add(p); db.session.flush(); db.session.add(RolePermission(role_id=roles[role_name].id,permission_id=p.id))
     users={}
-    for email,name,role in [('admin','Areeb Manager','Admin'),('support','Maira Support','Customer Support'),('warehouse','Rayan Warehouse','Warehouse'),('accounts','Dania Accounts','Accounts')]:
+    for email,name,role in [('admin','Jibraan Ali Zaidi Manager','Admin'),('support','Maira Support','Customer Support'),('warehouse','Rayan Warehouse','Warehouse'),('accounts','Dania Accounts','Accounts')]:
         u=User(email=email+'@demo.local',name=name,password_hash=generate_password_hash('DemoPass!2026')); db.session.add(u); db.session.flush()
         db.session.add(UserRole(user_id=u.id,role_id=roles[role].id)); users[email]=u
     reasons=[]
